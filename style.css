@@ -24,7 +24,7 @@ background-color: lightgray;
  flex: 70%; 
   background-color: white;
 }
-.content inframe{
+.content iframe{
   flex: 1;
   border: none;
   width: 100%;
