@@ -3,10 +3,15 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <b>Cảm ơn bạn đã góp ý kiến</b> <br>
-    Chúng tôi xin ghi nhận ý kiến của bạn và sẽ cải tiến, nâng cao chất lượng phục vụ hơn nữa trong thời gian sắp tới
-    <form action="gopy.html">
-    <input type="submit" name="cmd" value="Quay lại">
+    <p id="kq"> </p>
+    <script>
+      let pp = new URLSearchParams(window.location.search);
+      let ten = pp.get("txtTen");
+      let yk = pp.get("txtComment");
+      document.getElementById("kq").innerHTML = "Cảm ơn bạn " + ten + " đã góp ý. Chúng tôi xin ghi nhận ý kiến của bạn và sẽ cải thiện, nâng cao chất lượng phục vụ trong thời gian tới. <br><br>Ý kiến của bạn như sau:<br>" + yk;
+    </script>
+    <form action = "gopy.html">
+    <input type = "submit" name = "cmd" value= "Quay lại">
     </form>
   </body>
 </htm
