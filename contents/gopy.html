@@ -1,17 +1,25 @@
-<htlm>
+<html>
   <head>
-   <meta charset="utf-8"  >
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../style.css">
   </head>
   <body>
+    <form action="done.html">
       <h1> Đóng góp ý kiến cho thư viện của nhà trường</h1>
-    <ol>
-      <li>Thông tin về người góp ý</li>
-       <label>Họ và tên:<input type="text" name="txtTen"></label>
-       <br>
-       <label>Email:<input type="email" name="txtMail"></label>
-      <li>Đóng góp ý kiến</li>
-      <label>Ý kiến đóng góp:<textarea name="txtYkien" rows="6" cols="40"></textarea></label>
-    </ol>
-  </body> 
-</htlm>
+      <ol>
+        <li class="titlelist">Thông tin về người góp ý</li>
+         <label class="contextinlist">Họ và tên:<input type="text" name="txtTen"></label>
+         <br>
+         <label class="contextinlist">Email:<input type="email" name="txtMail"></label>
+        <li class="titlelist">Đóng góp ý kiến</li>
+        <label class="contextinlist" >Ý kiến đóng góp:<textarea name="txtYkien" rows="6" cols="40"></textarea></label>
+        <li class="titlelist">Thể loại cần bổ sung sách thêm:</li>
+        <input type="checkbox" name="TruyenNgan">Truyện ngắn <br>
+        <input type="checkbox" name="KiNang">Kĩ năng sống <br>
+        <input type="checkbox" name="LichSu">Lịch sử <br>
+        <input type="submit" name="cmd" value="Góp ý">
+      </ol>
+    </form>
+  </body>
+</html>
  
