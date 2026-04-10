@@ -3,10 +3,14 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <b>Bạn đã đăng kí thành công</b> <br>
-    Thông tin của bạn đã được ghi nhận
-    <form action="hoithao.html">
-    <input type="submit" name="cmd" value="Quay lại >>">
+    <p id="kq"> </p>
+    <script>
+      let pp = new URLSearchParams(window.location.search);
+      let ten = pp.get("txtTen");
+      document.getElementById("kq").innerHTML = "Cảm ơn bạn " + ten + " đã đăng ký tham gia hội thao. Chúng tôi xin ghi nhận. <br>";
+    </script>
+    <form action = "hoithao.html">
+    <input type = "submit" name = "cmd" value= "Quay lại">
     </form>
   </body>
 </html>
